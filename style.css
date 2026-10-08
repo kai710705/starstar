@@ -1,0 +1,21 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #f8fafc; background: #0f172a; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 10%, #312e81, transparent 36%), radial-gradient(circle at 90% 80%, #155e75, transparent 35%), #0f172a; }
+.game-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+.panel { width: min(720px, 100%); padding: 30px; border: 1px solid #ffffff25; border-radius: 28px; background: #111827cc; box-shadow: 0 24px 80px #02061799; backdrop-filter: blur(14px); text-align: center; }
+.eyebrow { margin: 0 0 8px; color: #67e8f9; font-size: .75rem; font-weight: 800; letter-spacing: .2em; }
+h1 { margin: 0; font-size: clamp(2.4rem, 8vw, 4.5rem); line-height: 1; }
+.subtitle { color: #cbd5e1; margin: 14px 0 24px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.stats div { padding: 12px; border-radius: 16px; background: #ffffff0d; }
+.stats span, .stats strong { display: block; }
+.stats span { color: #94a3b8; font-size: .8rem; }
+.stats strong { margin-top: 4px; color: #fef08a; font-size: 1.6rem; }
+.arena { position: relative; height: min(52vh, 360px); min-height: 260px; overflow: hidden; border-radius: 22px; border: 1px solid #ffffff20; background: #02061780; }
+.message { position: absolute; inset: 0; display: grid; place-items: center; color: #94a3b8; pointer-events: none; }
+.star { position: absolute; display: none; width: 58px; height: 58px; border: 0; border-radius: 50%; color: #fef08a; background: #f59e0b22; font-size: 2.6rem; line-height: 1; cursor: pointer; filter: drop-shadow(0 0 14px #fde047); transition: transform .12s; }
+.star:hover { transform: scale(1.18) rotate(12deg); }
+.start { margin-top: 20px; padding: 13px 28px; border: 0; border-radius: 999px; color: #082f49; background: linear-gradient(135deg, #67e8f9, #a5f3fc); font-weight: 800; font-size: 1rem; cursor: pointer; }
+.start:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.status { min-height: 1.4em; margin: 14px 0 0; color: #94a3b8; }
+@media (max-width: 480px) { .panel { padding: 22px 16px; } .stats strong { font-size: 1.3rem; } }

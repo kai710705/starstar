@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>星星點點</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="panel">
+      <p class="eyebrow">MINI ARCADE</p>
+      <h1>星星點點</h1>
+      <p class="subtitle">30 秒內點擊越多星星，分數越高！</p>
+      <div class="stats" aria-live="polite">
+        <div><span>分數</span><strong id="score">0</strong></div>
+        <div><span>剩餘時間</span><strong id="time">30</strong></div>
+        <div><span>最高紀錄</span><strong id="best">0</strong></div>
+      </div>
+      <div id="arena" class="arena" role="application" aria-label="遊戲區域">
+        <div id="message" class="message">按下開始，準備抓星星！</div>
+        <button id="star" class="star" aria-label="點擊星星">★</button>
+      </div>
+      <button id="start" class="start">開始遊戲</button>
+      <p id="status" class="status">準備好了嗎？</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
